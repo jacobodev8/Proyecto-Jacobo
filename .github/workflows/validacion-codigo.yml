@@ -1,4 +1,4 @@
-name: Instalar Node.js
+name: Validación de Código (Node.js)
 
 on:
   push:
