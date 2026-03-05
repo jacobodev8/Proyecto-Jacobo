@@ -1,21 +1,29 @@
 {
   "name": "proyectojacobo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Proyecto Jacobo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/index.test.js",
+    "lint": "eslint \"**/*.js\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jacobodev8/Proyecto-Jacobo.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "proyecto",
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Jacobo",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/jacobodev8/Proyecto-Jacobo/issues"
   },
-  "homepage": "https://github.com/jacobodev8/Proyecto-Jacobo#readme"
+  "homepage": "https://github.com/jacobodev8/Proyecto-Jacobo#readme",
+  "devDependencies": {
+    "eslint": "^9.39.3"
+  }
 }
