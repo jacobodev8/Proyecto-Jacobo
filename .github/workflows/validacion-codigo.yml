@@ -1,20 +1,25 @@
-name: Validación de Código (Node.js)
+name: Instalar Node.js
+
 on:
-    push:
-        branches:
-            - main
+  push:
+    branches:
+      - main
+
 jobs:
-    install:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout del código
-              uses: actions/checkout@v2
-            - name: Configurar Node.js
-              uses: actions/setup-node@v2
-              with:
-                  node-version: '24'
-            - name: Instalar dependencias
-              run: npm install
-            - name: Ejecutar lint
-              run: npm run lint
-              
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del código
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Instalar dependencias
+        run: npm install
+
+      - name: Ejecutar lint
+        run: npm run lint
